@@ -34,7 +34,11 @@ export default function Dashboard() {
             value={month}
             onChange={(e) => setMonth(e.target.value)}
         />
-        <button onClick={handleFetch} style={{ marginLeft: 10 }}>
+        <button
+            onClick={handleFetch}
+            disabled={loading}
+            style={{ marginLeft: 10 }}
+        >
             Load
         </button>
         
@@ -43,7 +47,7 @@ export default function Dashboard() {
         
         {data && (
             <div style={{ marginTop: 15 }}>
-                <p><strong>Total NGOs Reporting:</strong> {data.total_ngos}</p>
+                <p><strong>Total NGOs Reporting:</strong> {data.total_ngos_reporting}</p>
                 <p><strong>Total People Helped:</strong> {data.total_people_helped}</p>
                 <p><strong>Total Events Conducted:</strong> {data.total_events_conducted}</p>
                 <p><strong>Total Funds Utilized:</strong> {data.total_funds_utilized}</p>
