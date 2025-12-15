@@ -139,6 +139,17 @@ VITE_API_BASE_URL=http://localhost:4000/api
 - Backend API: https://wedogood-impact-reporting.onrender.com/api
 - Health Check: https://wedogood-impact-reporting.onrender.com/api/health
 
+## Screenshots
+
+### CSV Upload & Job Tracking
+![CSV Upload](./screenshots/csv-upload.png)
+
+### Job Status Progress
+![Job Status](./screenshots/job-status.png)
+
+### Admin Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
 ## What I’d Improve With More Time
 - Add DB migrations (Prisma / Knex)
 - Persist row-level failure reasons
